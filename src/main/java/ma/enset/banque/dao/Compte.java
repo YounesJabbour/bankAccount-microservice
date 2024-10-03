@@ -18,6 +18,10 @@ public class Compte {
     private Long id;
     private String numero;
     private double solde;
+    private String currency;
     @Enumerated(EnumType.STRING)
     private CompteType type;
+
+    @ManyToOne
+    private Customer customer;
 }
